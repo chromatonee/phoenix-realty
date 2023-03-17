@@ -1,5 +1,5 @@
 <?php debug_backtrace() || header("Location: 404");?>
-<base href="http://192.168.29.205/phoenixrealty/">
+<base href="http://localhost/phoenixrealty/">
 <link rel="shortcut icon" href="assets/img/favicon.png"/>
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
