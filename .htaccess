@@ -1,0 +1,20 @@
+RewriteEngine On 
+
+
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+#404 Redirect
+ErrorDocument 404 /servicebased/404.php
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d    
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#RewriteRule ^([0-9a-zA-Z-]+)$ property-details.php?qu=$1 [QSA,L]
+#RewriteRule ^([0-9a-zA-Z-]+)$ property-list.php?qu=$2 [QSA,L]
+
+RewriteRule ^city/(.*)$ property-list.php?page=$2 [L]
+RewriteRule ^property/(.*)$ property-details.php?page=$2 [L]
